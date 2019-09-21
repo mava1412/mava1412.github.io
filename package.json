@@ -1,0 +1,14 @@
+{
+  "name": "code_pen",
+  "version": "1.0.0",
+  "description": "responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o code_pen/css/ --recursive"
+  },
+  "author": "Mariano Vazquez",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
