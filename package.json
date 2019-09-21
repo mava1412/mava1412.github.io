@@ -6,7 +6,7 @@
   "homepage": "https://mava1412.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o code_pen/css/ --recursive",
-    "deploy": "gh-pages -d code_pen"
+    "deploy": "gh-pages -d ./"
   },
   "author": "Mariano Vazquez",
   "license": "MIT",
