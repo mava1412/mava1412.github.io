@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://mava1412.github.io",
   "scripts": {
-    "sass": "node-sass -w scss/ -o code_pen/css/ --recursive",
+    "sass": "node-sass -w scss/ -o css/ --recursive",
     "deploy": "gh-pages -d code_pen"
   },
   "author": "Mariano Vazquez",
