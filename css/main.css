@@ -10,6 +10,10 @@ body {
   font-family: "Montserrat", sans serif;
   font-size: .8em; }
 
+img {
+  width: 100%;
+  object-fit: contain; }
+
 header {
   padding: 1em;
   display: flex;
@@ -36,7 +40,7 @@ header {
 .wrapper {
   display: grid;
   border: 2px solid green;
-  grid-template-columns: 1fr; }
+  grid-template-columns: auto; }
   .wrapper section {
     margin: 1.5em;
     padding: 1em;
@@ -49,9 +53,19 @@ header {
       padding: 1em;
       text-align: center;
       border: 1px solid gray; }
-    .wrapper section.intro .profile-pic img {
-      width: 100%;
-      object-fit: contain; }
+  .wrapper section.work {
+    display: grid;
+    grid-gap: 20px; }
+    .wrapper section.work .inner {
+      text-align: left;
+      padding: 0 1em;
+      border: 1px solid gray; }
+    .wrapper section.work .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      padding: 1em;
+      border: 1px solid gray; }
 
 footer {
   border: 1px solid gray;

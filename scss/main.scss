@@ -5,6 +5,8 @@ body, html {
   // overflow: hidden;
 }
 
+// start of Global styles
+
 body {
     height: 100%;
     background: black;
@@ -13,6 +15,13 @@ body {
     font-family: "Montserrat", sans serif;
     font-size: .8em;
   }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  // end of Global styles
 
 header {
    // position: absolute;
@@ -48,10 +57,11 @@ header {
 
 }
 
+// start wrapper
 .wrapper {
   display: grid;
   border: 2px solid green;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
 
   section {
     margin: 1.5em;
@@ -60,6 +70,7 @@ header {
 
   }
 
+// start intro section
   section.intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -70,15 +81,48 @@ header {
       text-align: center;
       border: 1px solid gray;
     }
-
-    .profile-pic img {
-      width: 100%;
-      object-fit: contain;
-    }
   }
 
+  // end intro section
+
+// start work section
+  section.work {
+      display: grid;
+      grid-gap: 20px;
+      // grid-template-row: repeat(2, 1fr);
+
+    .inner {
+      text-align: left;
+      padding: 0 1em;
+      border: 1px solid gray;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      padding: 1em;
+      border: 1px solid gray;
+
+    }
+  }
+// end work section
+
+// start of about section
+
+
+
+// end of about section
+
+
+// start of contact section
+
+
+
+// end of contact section
 
 }
+// end wrapper
 
 footer {
   border: 1px solid gray;
