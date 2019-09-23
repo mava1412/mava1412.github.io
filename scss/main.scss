@@ -57,29 +57,46 @@ header {
 
 }
 
-// start wrapper
-.wrapper {
+// // start wrapper
+  .wrapper {
   display: grid;
-  border: 2px solid green;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center; /* adjusted */
 
   section {
     margin: 1.5em;
     padding: 1em;
     border: 1px solid blue;
+    width: 50%;
 
   }
 
 // start intro section
   section.intro {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
+    grid-template-columns: 1fr;
 
-    .profile-pic, .bio {
-      padding: 1em;
-      text-align: center;
+    .profile-pic {
+      display: grid;
+      padding: 2em;
       border: 1px solid gray;
+    }
+
+    .profile-pic img {
+      display: grid;
+      object-fit: cover;
+      width: 100%;
+      // max-height: 100%;
+      border-radius: 50%;
+
+    }
+
+    .profile-pic p {
+      display: grid;
+      // padding: 1rem;
+
     }
   }
 
@@ -99,11 +116,14 @@ header {
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       grid-gap: 20px;
       padding: 1em;
       border: 1px solid gray;
+    }
 
+    .projects img {
+      max-width: 100%;
     }
   }
 // end work section
