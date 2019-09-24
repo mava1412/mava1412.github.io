@@ -41,13 +41,15 @@ h2 i {
 h3 {
 	font-size: 28px;
 	color: #8D8273;
+	letter-spacing: 1px;
 }
 
 h4 {
-	font-size: 28px;
+	font-size: 20px;
 	color: #8D8273;
 	font-weight: 400;
 	margin-bottom: 0;
+	letter-spacing: 1px;
 }
 
 p {
@@ -239,13 +241,64 @@ nav a#toggle-btm {
 	}
 }
 
+/* about section */
 
+#about {
+	padding: 8rem;
+}
 
+#about h2 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 14px;
+	letter-spacing: 12px;
+	margin-bottom: 2em;
+}
 
+/* features section */
 
+#features {
+	background: #282627;
+	padding: 8em 0;
+}
 
+.features-content {
+	display: grid;
+	grid-gap: 80px;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: left;
+}
 
+@media screen and (max-width: 580px) {
+	.features-content {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(1, 1fr);
+		text-align: left;
+	}
+}
 
+/* subscribe section */
+
+#subscribe {
+	background: #343233;
+	padding: 8em 0;
+}
+
+#subscribe h2 {
+	color: #8D8273;
+}
+
+#subscribe input {
+	width: 80%;
+	margin: 2em 0;
+	background: none;
+	border: solid 1px #8D8273;
+	padding: 20px;
+	font-family: Roboto;
+	font-weight: 400;
+	color: rgba(211, 165, 100);
+}
 
 
 
