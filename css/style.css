@@ -34,6 +34,12 @@ img {
 	font-size: .9em;
 }
 
+@media (min-width: 60rem) {
+	.title {
+		font-size: 3.1rem;
+	}
+}
+
 /* buttons */
 
 .button {
@@ -47,19 +53,31 @@ img {
 	padding: .5em 1em;
 }
 
-.button.button-accent {
+.button-accent {
 	color: #fff;
 }
 
+.button-accent:hover,
+.button-accent:focus {
+	background: black;
+	color: #232323;
+	color: #fff;
+}
 
-/* header */
+.button-small {
+	color: black;
+	font-size: .8em;
+}
+
+
+/* nav bar */
 
 header {
 	/* makes the header stay on top of the hero */
 	position: absolute;
 	/* left: 0; */
 	right: 0;
-	margin-top: 1em;
+	margin: 1em 3em;
 	}
 
 nav ul {
@@ -85,6 +103,12 @@ nav a {
 nav a:hover,
 nav a:focus {
 	color: #ddd;
+}
+
+@media (min-width: 60rem) {
+	nav {
+		float: right;
+	}
 }
 
 /* hero section */
