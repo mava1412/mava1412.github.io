@@ -17,6 +17,7 @@ img {
 
 .container {
 	width: 95%;
+	max-width: 68em;
 	margin: 0 auto;
 
 }
@@ -27,6 +28,15 @@ h1 {
 	font-weight: 300;
 	font-size: 2.5rem;
 	margin-top: 0;
+}
+
+p {
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
 }
 
 .title {
@@ -43,6 +53,12 @@ h1 {
 }
 
 @media (min-width: 960px) {
+
+	p {
+		font-size: .9rem;
+		line-height: 1.5;
+	}
+
 	.title {
 		font-size: 3.1rem;
 	}
@@ -186,9 +202,28 @@ section.home-hero {
 		font-size: 2.5rem;
 	}
 
+	.home-about {
+		background-image: url(../images/who-we-are.jpg);
+		background-repeat: no-repeat;
+		/* background-size: cover; */
+		/* background-position: center; */
+		padding: 3.5em;
+		/* padding-bottom: 6em; */
+	}
+
+	.home-about-textbox {
+		width: 55%;
+		padding: 5em;
+		margin-left: -1.5%;
+		top: -7.5em;
+		text-align: left;
+		box-shadow: 0 0 4em 0 rgba(0,0,0,.5);
+	}
+
 	.home-about-textbox h1 {
 		top: .3em;
-		padding: 0 .6em;
+		left: 3.25rem;
+		transform: translateX(0);
 	}
 }
 
