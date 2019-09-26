@@ -23,8 +23,16 @@ img {
 
 /* Typography */
 
+h1 {
+	font-weight: 300;
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
 .title {
 	font-size: 2rem;
+	font-weight: 800;
+	margin-top: 1em;
 }
 
 .title span {
@@ -34,7 +42,7 @@ img {
 	font-size: .9em;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 960px) {
 	.title {
 		font-size: 3.1rem;
 	}
@@ -45,12 +53,12 @@ img {
 .button {
 	/* allows padding to be effectively applied */
 	display: inline-block;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-width: 2px;
 	border-style: solid;
-	padding: .5em 1em;
+	padding: .5em 1.75em;
 }
 
 .button-accent {
@@ -67,6 +75,12 @@ img {
 .button-small {
 	color: black;
 	font-size: .8em;
+}
+
+@media (max-width: 960px) {
+	.button {
+		font-size: 1.5rem;
+	}
 }
 
 
@@ -105,7 +119,7 @@ nav a:focus {
 	color: #ddd;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 960px) {
 	nav {
 		float: right;
 	}
@@ -115,15 +129,68 @@ nav a:focus {
 
 section.home-hero {
 	background: url(../images/hero-bg.jpg);
-	padding: 10em 0;
+	background-size: cover;
+	background-position: center;
+	padding: 10.3em 0;
 	color: #fff;
 }
 
+@media (min-width: 960px) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 50vh;
+	}
 
+}
 
+/* home-about section */
 
+.home-about-textbox {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.7%;
+	outline: 2px solid #00ff6c;
+	outline-offset: -2.5em;
+	color: #fff;
+	/* makes this show behind the h1 which has a position = absolute */
+	position: relative;
+}
 
+.home-about-textbox h1 {
+	color: #00ff6c;
+	position: absolute;
+	/* moves the h1 all the way to the middle of the screen */
+	left: 50%;
+	transform: translateX(-50%);
+	/* moves the h1 up/down */
+	top: .75em;
+	/* we give it the same background color as the textbox so it creates the effect of cutting the margin line */
+	background-color: #232323;
+	padding: 0 .25em;
+}
 
+@media (min-width: 400px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.home-about-textbox h1 {
+		top: .6em;
+		padding: 0 .325em;
+	}
+}
+
+@media (min-width: 960px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.home-about-textbox h1 {
+		top: .3em;
+		padding: 0 .6em;
+	}
+}
 
 
 
