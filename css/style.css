@@ -20,7 +20,13 @@ img {
 	width: 95%;
 	max-width: 68em;
 	margin: 0 auto;
+}
 
+.clearfix::after,
+section::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 /* Typography */
@@ -51,6 +57,11 @@ p:last-of-type {
 	/* displays the span on its own line */
 	display: block;
 	font-size: .9em;
+}
+
+.title-cta {
+	margin: 0 0 1em;
+	font-weight: 300;
 }
 
 @media (min-width: 960px) {
@@ -102,6 +113,17 @@ p:last-of-type {
 	color: #fff;
 }
 
+.button-contact-us {
+	color: #fff;
+	font-size: 1em;
+}
+
+.button-contact-us:hover,
+.button-contact-us:focus {
+	background: black;
+	color: #232323;
+	color: #fff;
+}
 
 
 
@@ -236,7 +258,8 @@ section.home-hero {
 /* portfolio section */
 
 .portfolio {
-	margin: 3em 0;
+	/* 3 on top, 0 left&right, 0 on bottom */
+	margin: 3em 0 0;
 }
 
 .port-item {
@@ -289,9 +312,26 @@ section.home-hero {
 
 }
 
+/* cta section */
+
+.cta {
+	background: #232323;
+	padding: 2em 0;
+	color: #fff;
+}
+
+.cta h1 {
+	font-size: 2em;
+	font-weight: 300;
+}
 
 
+/* footer section */
 
+footer {
+	background: #232323;
+	color: #fff;
+}
 
 
 
