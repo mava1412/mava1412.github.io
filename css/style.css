@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
 }
 
 body {
@@ -72,9 +73,16 @@ p:last-of-type {
 	font-size: 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	border-width: 2px;
+	border-width: 1px;
 	border-style: solid;
 	padding: .5em 1.75em;
+}
+
+@media (min-width: 960px) {
+	.button {
+		font-size: 1.5rem;
+		color: #fff;
+	}
 }
 
 .button-accent {
@@ -90,14 +98,11 @@ p:last-of-type {
 
 .button-small {
 	color: black;
-	font-size: .8em;
+	font-size: .6em;
+	color: #fff;
 }
 
-@media (max-width: 960px) {
-	.button {
-		font-size: 1.5rem;
-	}
-}
+
 
 
 /* nav bar */
@@ -228,11 +233,61 @@ section.home-hero {
 }
 
 
+/* portfolio section */
 
+.portfolio {
+	margin: 3em 0;
+}
 
+.port-item {
+	/* this lets overlap any other item on top of the image */
+	margin: 0;
+	position: relative;
+}
 
+.port-item img {
+	display: block;
+}
 
+.port-desc {
+	/* these 2 properties let the description be on top of the image */
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	/* making left and right zero, centers the item */
+	left: 0em;
+	right: 0em;
+	color: #fff;
+	/* this makes the background transparent */
+	background: rgba(0,0,0,.5);
+	padding-bottom: 1em;
+}
 
+.port-desc p {
+	margin: 1em;
+}
+
+@media (min-width: 592px) {
+	.port-item {
+		width: 50%;
+		float: left;
+	}
+
+	@media (min-width: 960px) {
+		.port-item {
+			width: 33.3333334%;
+			overflow: hidden;
+		}
+
+		.port-desc {
+			transform: translateY(150%);
+		}
+
+		.port-item:hover .port-desc {
+			transform: translateY(0%);
+		}
+
+}
 
 
 
