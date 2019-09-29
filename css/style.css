@@ -312,27 +312,203 @@ section.home-hero {
 
 }
 
-/* cta section */
 
-.cta {
-	background: #232323;
-	padding: 2em 0;
-	color: #fff;
-}
+/*Start timeline*/
 
-.cta h1 {
-	font-size: 2em;
-	font-weight: 300;
-}
-
-
-/* footer section */
-
-footer {
+section.experience {
 	background: #232323;
 	color: #fff;
 }
+section.experience .container {
+	padding: 3em;
+}
 
+.section-heading h6 {
+	font-size: 1em;
+}
+
+.timeline {
+	margin-left: 4em;
+	padding: 2em;
+}
+
+.timeline ul {
+  border-left: 2px solid #ffe838;
+  border-radius: .8rem;
+  background-color: rgba(0,0,0,0.05);
+  /* center the ul */
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+	font-size: .9em;
+}
+
+.timeline h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: .3;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+/* select the last item of the ul */
+
+.timeline .date:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+/* create the pseudo elements */
+
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  /* gets the value of the attribute (date) */
+  content: attr(data-date);
+  /* moves the element all the way to the left */
+  left: -21rem;
+  text-align: right;
+  /* takes the element back to the right */
+  min-width: 12rem;
+  font-size: 1rem;
+}
+
+.timeline .date::after {
+  /* initialises the new content   */
+  content: "";
+  /* creates the new object (circle, square, etc) */
+  box-shadow: 0 0 0 2px #00ff6c;
+  /* turn the element into a circle */
+  border-radius: 100%;
+  /* moves the element all the way to the left */
+  left: -8rem;
+  /* both height and width have the same rem to make a perfect circle */
+  height: 1rem;
+  width: 1rem;
+  background-color: #313534;
+}
+
+/*End timeline*/
+
+/*Start contact*/
+
+.contact {
+  background-color: #232323;
+	color: #fff;
+}
+
+form {
+  width: 70%;
+  /* to center the form */
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1em;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: #fd57bf;
+}
+
+/* this is to style the 'Submit' button */
+input[type="submit"] {
+  /* moves the button to the left */
+  width: initial;
+  background-color: #fd57bf;
+  color: #eee;
+  /* padding top & bottom / left & right */
+  padding: 1rem 2rem;
+  border-radius: .8rem;
+  cursor: pointer;
+  /* which type of effect, in which property it should be applied and for how long */
+  transition: background-color 650ms;
+}
+
+input [type="submit"]:hover {
+  color: #221e3f;
+  background-color: #ffe838;
+}
+
+/*End contact*/
+
+/*Start footer*/
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  padding: 2rem 0;
+  position: relative;
+	color: #fff;
+}
+
+.up {
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  background-color: #232323;
+  top: -4rem;
+  right: 3rem;
+  border-radius: 100%;
+  /* to center the icon in the middle */
+  display: flex;
+  /* add the animation from section below */
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.up i {
+  color: #00ff6c;
+  font-size: 2rem;
+	top: -4rem;
+  right: 3rem;
+}
+
+.copyright p {
+  font-size: 1.4rem;
+}
+
+/*End footer*/
+
+/*Start animations*/
+
+@keyframes pulse {
+  0%{
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
+}
+
+/*End animations*/
 
 
 
