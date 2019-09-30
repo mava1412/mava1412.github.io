@@ -23,10 +23,53 @@ img {
 }
 
 .clearfix::after,
-section::after {
+section::after,
+footer::after {
 	content: "";
 	display: block;
 	clear: both;
+}
+
+/* Column system */
+
+/* any class that starts with */
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.3333334%
+	float: left;
+}
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	/* [class^=col-]:first-child {
+		padding=left: 0;
+	} */
+
+	/* [class^=col-]:last-child {
+		padding=left: 0;
+	} */
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 16.6666%;
+	}
 }
 
 /* Typography */
@@ -62,6 +105,13 @@ p:last-of-type {
 .title-cta {
 	margin: 0 0 1em;
 	font-weight: 300;
+}
+
+.unstyled-list li {
+	margin: 1em;
+	display: inline;
+	padding: 1em;
+	list-style-type: none;
 }
 
 @media (min-width: 960px) {
@@ -213,9 +263,9 @@ section.home-hero {
 	padding: 0 .25em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
 	h1 {
-		font-size: 2rem;
+		font-size: 1.35em;
 	}
 
 	.home-about-textbox h1 {
@@ -259,7 +309,8 @@ section.home-hero {
 
 .portfolio {
 	/* 3 on top, 0 left&right, 0 on bottom */
-	margin: 3em 0 0;
+	background-color: #232323;
+	color: #fff;
 }
 
 .port-item {
@@ -290,15 +341,48 @@ section.home-hero {
 	margin: 1em;
 }
 
-@media (min-width: 592px) {
+/* @media (min-width: 592px) {
 	.port-item {
-		width: 50%;
+		width: 100%;
 		float: left;
-	}
+	} */
+
+	@media (min-width: 632px) {
+
+		.portfolio {
+			/* 3 on top, 0 left&right, 0 on bottom */
+			/* margin: 2em 0 0; */
+			padding: 2rem;
+			background-color: #232323;
+			color: #fff;
+		}
+
+		.portfolio h1 {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+
+		.port-item {
+			width: 50%;
+			position: relative;
+			/* margin: 0; */
+			float: left;
+			font-size: 1.1em;
+			overflow: hidden;
+		}
+}
 
 	@media (min-width: 960px) {
+
+		.portfolio h1 {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+
 		.port-item {
 			width: 33.3333334%;
+			position: relative;
+			font-size: 1.3em;
 			overflow: hidden;
 		}
 
@@ -325,6 +409,8 @@ section.experience .container {
 
 .section-heading h6 {
 	font-size: 1em;
+	margin: 0 auto;
+	padding: 1em;
 }
 
 .timeline {
@@ -414,6 +500,12 @@ section.experience .container {
 	color: #fff;
 }
 
+.section-heading h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-bottom: .2em;
+}
+
 form {
   width: 70%;
   /* to center the form */
@@ -421,16 +513,18 @@ form {
 }
 
 form label {
-  font-size: 1em;
+  font-size: .9em;
+	float: left;
+	margin: .5em 0 .5em 0;
 }
 
 input,
 select,
 textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 5px;
-  border: none;
+  border-radius: .5em;
   outline-color: #fd57bf;
 }
 
@@ -438,14 +532,15 @@ textarea {
 input[type="submit"] {
   /* moves the button to the left */
   width: initial;
-  background-color: #fd57bf;
-  color: #eee;
+  background-color: #313534;
+  color: #fff;
   /* padding top & bottom / left & right */
   padding: 1rem 2rem;
   border-radius: .8rem;
   cursor: pointer;
   /* which type of effect, in which property it should be applied and for how long */
   transition: background-color 650ms;
+	margin: 1.5em 0 3em 0;
 }
 
 input [type="submit"]:hover {
@@ -456,6 +551,14 @@ input [type="submit"]:hover {
 /*End contact*/
 
 /*Start footer*/
+
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	font-size: .9em;
+	padding: 5em 0;
+}
 
 .copyright {
   width: 100%;
@@ -489,7 +592,7 @@ input [type="submit"]:hover {
 }
 
 .copyright p {
-  font-size: 1.4rem;
+  font-size: .9em;
 }
 
 /*End footer*/
