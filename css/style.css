@@ -280,11 +280,16 @@ section.home-hero {
 	}
 
 	.home-about {
-		background-image: url(../images/who-we-are.jpg);
+		background-image: url(../images/portrait_m.png);
+		border-radius: 3em;
+		float: right;
 		background-repeat: no-repeat;
+		margin: 4em .5em;
+		background-size: 30%;
+		background-color: #232323;
 		/* background-size: cover; */
-		/* background-position: center; */
-		padding: 3.5em;
+		background-position: right;
+		/* padding: 3.5em; */
 		/* padding-bottom: 6em; */
 	}
 
@@ -292,7 +297,7 @@ section.home-hero {
 		width: 55%;
 		padding: 5em;
 		margin-left: -1.5%;
-		top: -7.5em;
+		top: -8.2em;
 		text-align: left;
 		box-shadow: 0 0 4em 0 rgba(0,0,0,.5);
 	}
