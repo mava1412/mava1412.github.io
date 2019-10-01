@@ -182,10 +182,22 @@ p:last-of-type {
 header {
 	/* makes the header stay on top of the hero */
 	position: absolute;
-	/* left: 0; */
-	right: 0;
+	left: 0;
+	/* right: 0; */
 	margin: 1em 3em;
 	}
+
+.social-icons i {
+	padding: .3em;
+	/* left: 0; */
+	color: #fff;
+	cursor: pointer;
+}
+
+.social-icons i:hover {
+	left: 0;
+	color: #232323;
+}
 
 nav {
 	position: fixed;
@@ -221,7 +233,7 @@ nav ul li {
 
 nav ul li a {
 	line-height: 70px;
-	color: #151515;
+	color: #fff;
 	padding: 7px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -236,6 +248,10 @@ nav.black ul li a {
 	color: #fff;
 }
 
+nav.black ul li a:hover {
+	color: #00ff6c;
+}
+
 nav ul li a:focus {
 	outline: none;
 }
@@ -248,7 +264,7 @@ nav ul li a.active {
 
 nav a:hover,
 nav a:focus {
-	color: #ddd;
+	color: #00ff6c;
 }
 
 @media (min-width: 960px) {
