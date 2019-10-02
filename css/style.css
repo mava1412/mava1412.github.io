@@ -233,7 +233,7 @@ nav ul {
 	/* margin: 1em 0; */
 	margin: 0;
 	padding: 0;
-	text-align: right;
+	text-align: center;
 	transition: 1s;
 	float: right;
 	z-index: 1000;
@@ -745,7 +745,8 @@ footer {
 	}
 
 	.showing {
-		max-height: 20em;
+		max-height: 50em;
+		/* text-align: center; */
 	}
 
 	nav ul li {
