@@ -301,19 +301,21 @@ h6 {
 }
 
 .project1 {
-      background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
+      background: url(../images/natours.png) no-repeat;
+      width: 300px;
+      height: 300px;
       background-size: cover;
 }
 
 .project1::after {
-      content: "timeless flow.";
+      content: "Natours Project";
       font-family: "Roboto Mono";
-      font-size: 36px;
+      font-size: 24px;
       position: relative;
       color: #fff;
       display: block;
-      top: 8%;
-      left: -60%;
+      top: 60%;
+      left: -70%;
       right: 0;
       bottom: 0;
 }
@@ -326,7 +328,7 @@ h6 {
 .project2::after {
       content: "foretime.";
       font-family: "Roboto Mono";
-      font-size: 36px;
+      font-size: 24px;
       position: relative;
       color: #fff;
       display: block;
@@ -344,7 +346,7 @@ h6 {
 .project3::after {
       content: "never again.";
       font-family: "Roboto Mono";
-      font-size: 36px;
+      font-size: 24px;
       position: relative;
       color: #fff;
       display: block;
@@ -362,7 +364,7 @@ h6 {
 .project4::after {
       content: "departure.";
       font-family: "Roboto Mono";
-      font-size: 36px;
+      font-size: 24px;
       position: relative;
       color: #fff;
       display: block;
