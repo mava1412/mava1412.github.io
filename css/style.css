@@ -397,6 +397,7 @@ h6 {
 }
 
 /*--------------- footer section --------------- */
+
 .collab {
       text-align: right;
 }
@@ -492,6 +493,11 @@ h6 {
             margin: 0 0 0 -22px;
             padding: 0;
       }
+}
+
+.links {
+  color: white;
+  text-decoration: none;
 }
 
 /*--------------- work page --------------- */
